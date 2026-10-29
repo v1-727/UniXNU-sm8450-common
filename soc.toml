@@ -1,0 +1,10 @@
+schema_version = 2
+
+[soc]
+name = "sm8450"
+description = "Qualcomm SM8450 family (SM8450, SM8475, SM7475)"
+source_repository = "https://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git"
+source_revision = "075b74841bd0065a3bda3440873c747938e69b68"
+
+[components]
+include = ["ArmCpu", "ArmDTPlatform"]

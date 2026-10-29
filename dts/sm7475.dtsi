@@ -1,0 +1,7 @@
+// SPDX-License-Identifier: BSD-3-Clause
+// SM7475 is an SM8475 derivative with the same CPU topology and interrupt controller.
+/include/ "sm8475.dtsi"
+
+/ {
+    compatible = "qcom,sm7475", "qcom,sm8475", "qcom,sm8450";
+};

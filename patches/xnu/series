@@ -1,0 +1,5 @@
+native-smp-secondary.patch
+# Unchanged from UniXNU-sm8550-common: the guarded PMGR call site that UniXNU's zzz-boot-progress.patch is written against.
+sheng-platform-power.patch
+# From UniXNU-udon (SM8475): the physical timer write in _enable_virtual_timer traps (undefined instruction d51be228).
+skip-physical-timer.patch

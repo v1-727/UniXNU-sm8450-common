@@ -1,0 +1,22 @@
+// SPDX-License-Identifier: BSD-3-Clause
+// Resources from linux-next arch/arm64/boot/dts/qcom/sm8475.dtsi (075b74841bd0): the UFS PHY moves; the GPU is the A730v3.
+/include/ "sm8450.dtsi"
+
+/ {
+    compatible = "qcom,sm8475", "qcom,sm8450";
+};
+
+/delete-node/ &ufsphy;
+
+&soc {
+    ufsphy: phy@1d80000 {
+        compatible = "qcom,sm8475-qmp-ufs-phy";
+        unixnu,adt-name = "ufsphy";
+        reg = <0 0x1d80000 0 0x2000>;
+        status = "disabled";
+    };
+};
+
+&gpu {
+    compatible = "qcom,adreno-730.2", "qcom,adreno";
+};
