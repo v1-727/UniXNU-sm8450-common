@@ -1,10 +1,10 @@
 "schema_version" = 2
 
 ["soc"]
-"name" = "sm8550"
-"description" = "Qualcomm SM8550"
-"source_repository" = "https://github.com/ianchb/sm8550-mainline"
-"source_revision" = "42f3b40c702abbc37c3a04c95af008cd283aeaf3"
+"name" = "sm8450"
+"description" = "Qualcomm SM8450/SM8475/SM7475"
+"source_repository" = "https://github.com/japq7s/linux-sm8450-mainline"
+"source_revision" = "568f67832bd412ad47d8da3e77be9a835aff9986"
 
 
 ["components"]
