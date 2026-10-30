@@ -1,0 +1,3 @@
+native-smp-secondary.patch
+sheng-platform-power.patch
+skip-physical-timer.patch

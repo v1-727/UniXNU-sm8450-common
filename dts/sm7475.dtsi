@@ -1,0 +1,7 @@
+// SPDX-License-Identifier: BSD-3-Clause
+// what are we doing
+/include/ "sm8475.dtsi"
+
+/ {
+    compatible = "qcom,sm7475", "qcom,sm8475", "qcom,sm8450";
+};

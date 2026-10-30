@@ -1,0 +1,17 @@
+// SPDX-License-Identifier: BSD-3-Clause
+/include/ "sm8450.dtsi"
+
+/ {
+    compatible = "qcom,sm8475", "qcom,sm8450";
+};
+
+/delete-node/ &ufsphy;
+
+&soc {
+    ufsphy: phy@1d80000 {
+        compatible = "qcom,sm8475-qmp-ufs-phy";
+        unixnu,adt-name = "ufsphy";
+        reg = <0 0x1d80000 0 0x2000>;
+        status = "disabled";
+    };
+};
