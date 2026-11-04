@@ -1,0 +1,11 @@
+"schema_version" = 2
+
+["soc"]
+"name" = "sm8450"
+"description" = "Qualcomm SM8450 family: SM8450, SM8475 and SM7475"
+"source_repository" = "https://github.com/japq7s/linux-sm8450-mainline"
+"source_revision" = "568f67832bd412ad47d8da3e77be9a835aff9986"
+
+
+["components"]
+"include" = ["ArmCpu", "ArmDTPlatform"]

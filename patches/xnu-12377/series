@@ -1,0 +1,6 @@
+# SoC patch paths for xnu-12377, one per line in application order.
+# sheng-platform-power.patch is the SM8550 one unchanged: it does nothing unless XNU_SHENG_PMGR is set,
+# and the OS profile's zzz-boot-progress.patch applies on top of its bsd_init.c lines.
+sheng-platform-power.patch
+native-smp-secondary.patch
+skip-physical-timer-only-8450.patch

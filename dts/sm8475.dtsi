@@ -1,0 +1,19 @@
+// SPDX-License-Identifier: BSD-3-Clause
+// SM8475 and SM7475: the SM8450 resources with the UFS PHY of
+// arch/arm64/boot/dts/qcom/sm8475.dtsi (linux-sm8450-mainline 568f67832bd412ad47d8da3e77be9a835aff9986).
+/include/ "sm8450.dtsi"
+
+/delete-node/ &ufsphy;
+
+/ {
+    compatible = "qcom,sm8475";
+
+    soc {
+        ufsphy: phy@1d80000 {
+            compatible = "qcom,sm8475-qmp-ufs-phy";
+            unixnu,adt-name = "ufsphy";
+            reg = <0 0x1d80000 0 0x2000>;
+            status = "disabled";
+        };
+    };
+};
